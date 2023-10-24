@@ -58,3 +58,20 @@ function calculadorIMC(height = 1.6, weight = 56) {
 
 const prueba6 = calculadorIMC(1.7, 60);
 console.log(prueba6);
+
+// función expresada
+
+const calculadorIMC2 = function (height = 1.6, weight = 56) {
+  const imc = weight / Math.pow(height, 2);
+  return imc;
+};
+
+const prueba7 = calculadorIMC(1.7, 60);
+console.log(prueba7);
+
+// arrow function
+const calculadorIMC3 = (height = 1.6, weight = 56) =>
+  weight / Math.pow(height, 2);
+
+const prueba8 = calculadorIMC(1.7, 60);
+console.log(prueba8);
